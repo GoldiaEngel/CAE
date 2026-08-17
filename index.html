@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>CAE Exam Catalog - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 40px; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        /* Layout cho Header có nút Back */
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .header-bar h1 {
+            color: #007791;
+            margin: 0;
+            border: none;
+            padding: 0;
+        }
+
+        /* Nút Back */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ffffff;
+            color: #007791;
+            border: 1.5px solid #007791;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            background: #007791;
+            color: #ffffff;
+            transform: translateX(-2px);
+        }
+
+        .folder-box { background: #fff; border: 1px solid #dcdcdc; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .folder-title { font-size: 18px; font-weight: bold; color: #444; margin-bottom: 15px; }
+        
+        .slider-wrapper { display: flex; align-items: center; gap: 10px; }
+        .slider-btn { background: #6c757d; color: white; border: none; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 15px; font-weight: bold; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+        .slider-btn:hover { background: #495057; }
+        .slider-btn:disabled { background: #d6d8db; cursor: not-allowed; }
+
+        .test-grid-scroll { display: flex; gap: 10px; overflow-x: hidden; scroll-behavior: smooth; width: 100%; padding: 5px 0; }
+        .test-btn { background: #007791; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-size: 13px; font-weight: bold; text-decoration: none; display: inline-block; flex-shrink: 0; min-width: 75px; text-align: center; }
+        .test-btn:hover { background: #005f73; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <!-- Nút Back quay lại trang chủ/cổng điều hướng trước đó -->
+            <a href="../index.html" class="back-btn">
+                <span>&#11013;</span> Back
+            </a>
+            <h1>CAE (C1 Advanced) Test Index</h1>
+        </div>
+
+        <div id="catalogContainer">
+            <!-- Các danh mục đề thi CAE sẽ được sinh tự động ở đây -->
+        </div>
+    </div>
+
+    <script>
+        // Tạo mảng từ 1 đến 30 tự động cho mỗi kĩ năng
+        const tests30 = Array.from({ length: 30 }, (_, i) => i + 1);
+
+        const categories = [
+            {
+                title: "Reading and Use of English",
+                folderKey: "cae_reading",
+                tests: tests30
+            },
+            {
+                title: "Listening",
+                folderKey: "cae_listening",
+                tests: tests30
+            },
+            {
+                title: "Writing",
+                folderKey: "cae_writing",
+                tests: tests30
+            }
+        ];
+
+        const catalogContainer = document.getElementById('catalogContainer');
+        let htmlContent = '';
+
+        categories.forEach((cat, index) => {
+            let buttonsHtml = '';
+            cat.tests.forEach(testNum => {
+                buttonsHtml += `<a href="exam.html?folder=${cat.folderKey}/test${testNum}" class="test-btn">Test ${testNum}</a>`;
+            });
+
+            htmlContent += `
+                <div class="folder-box">
+                    <div class="folder-title">${cat.title}</div>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn" onclick="scrollSlider(${index}, -1)">❮</button>
+                        <div class="test-grid-scroll" id="slider_${index}">
+                            ${buttonsHtml}
+                        </div>
+                        <button class="slider-btn" onclick="scrollSlider(${index}, 1)">❯</button>
+                    </div>
+                </div>
+            `;
+        });
+
+        catalogContainer.innerHTML = htmlContent;
+
+        function scrollSlider(index, direction) {
+            const slider = document.getElementById(`slider_${index}`);
+            const scrollAmount = 300; // Khoảng cách trượt mỗi lần bấm
+            slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
