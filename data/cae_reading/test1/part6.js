@@ -1,57 +1,52 @@
 window.PART_DATA_6 = {
-    instructions: "You are going to read five reviews of a book about the history of architecture. For questions 37–40, choose from the reviewers A–E. The reviewers may be chosen more than once.",
-    articleTitle: "The Future of Urban Architecture",
+    instructions: "Four reviewers comment on the TV documentary series <i>Inside Business</i>, which investigated the workings of a number of large companies. For questions 37–40, choose from the reviewers A–D. The reviewers may be chosen more than once.",
+    articleTitle: "Inside Business",
     sections: [
         {
             label: "A",
-            title: "Reviewer A - Elena Rostova",
-            text: "Dr. Aris's landmark study provides a compelling narrative of urban evolution over the last two centuries. Her central argument—that municipal planning decisions are fundamentally driven by socio-economic pressures rather than artistic vision—is supported by meticulous archival research. While some critics may find her prose somewhat dense, the depth of technical detail is unmatched. Crucially, her discussion of vertical density in mega-cities offers fresh theoretical perspectives that challenge conventional wisdom in contemporary design circles."
+            title: "Reviewer A",
+            text: "The companies that were the focus of each programme in the series <i>Inside Business</i> were very diverse in terms of the nature of their business and the way they operated, but between them they demonstrated many of the key features that characterise big organisations in the modern world. Each programme focused mostly on the people at the top. The amount of jargon they used is likely to have been too much for many viewers to contend with, and they may well have given up. If they did stick with the series, however, they will have been left in no doubt as to how complex the business of running large organisations is for those charged with doing so. This was clear from what the interviewees said, but the questioning was not probing enough, and they were not asked to explain or justify the sweeping statements they made."
         },
         {
             label: "B",
-            title: "Reviewer B - Marcus Vance",
-            text: "In 'The Future of Urban Architecture', Aris attempts to synthesize complex historical trends into a unified framework. However, the result feels distinctly uneven. Her analysis of 19th-century European capitals is insightful, yet the sections dealing with modern Asian developments seem superficial and derivative. Furthermore, Aris downplays the pivotal role of pioneering individual architects, choosing instead to emphasize broader economic factors. This sociological bias severely undermines what could otherwise have been a balanced historical survey."
+            title: "Reviewer B",
+            text: "The overwhelming impression given to any viewer who watched all six episodes of <i>Inside Business</i> was of the extraordinary pressure that those running modern companies are obliged to operate under. Unless they themselves had experience of working in large companies, however, they are likely to have found some of the interviews bewildering - the questioning was very much of the 'one insider to another' variety and many viewers will have struggled to follow what was being discussed. This aspect detracted somewhat from what was an otherwise compelling insight into the workings of modern companies and may well have caused many viewers to change channels. That's a shame because in general the companies featured in the series illustrated very well the impact of modern management theories on a range of large organisations."
         },
         {
             label: "C",
             title: "Reviewer C",
-            text: "Aris brings a fresh, interdisciplinary rigor to architectural history. By placing financial constraints and regulatory frameworks at the core of her analysis, she successfully demystifies how iconic skylines came into being. Far from being overly academic, her writing is engaging and lively throughout. Unlike Marcus Vance, who claims her treatment of Asian urbanism is inadequate, I found those chapters to be among the most illuminating in the book, highlighting dynamics often ignored in Western-centric literature."
+            text: "You didn't need to know anything about business to be fascinated by the series <i>Inside Business</i>, which gave an intriguing picture from the inside of how various household name companies actually operate. The companies chosen made for good television because they all had very individual cultures and ways of operating, and as such could not be said to typify the norm in the world of the modern company. Entertaining as this was, the portrayal of the firms begged all sorts of questions which were not touched on in the interviews. These gave the people in charge a very easy ride indeed, never challenging them to back up their often vague and contentious pronouncements on their approach to leadership. Indeed, the viewer will have been left with the surprising feeling that many large and apparently successful organisations are run by people who enjoy their roles enormously because they avoid the harder aspects of responsibility by delegating them to others."
         },
         {
             label: "D",
             title: "Reviewer D",
-            text: "This volume is a welcome contribution to the field, notable for its broad historical scope and rich illustrations. Aris's insistence on economic determinism as the primary driver of building design is persuasive, even if it occasionally minimizes the artistic creativity of master builders. On the question of her prose style, I must align with those who find it needlessly dense and convoluted; a more accessible tone would have broadened its appeal beyond specialized academics."
-        },
-        {
-            label: "E",
-            title: "Reviewer E - Dr. Julian Thorne",
-            text: "Aris's work is undoubtedly ambitious, yet it stumbles under the weight of its own theoretical framework. By prioritizing macro-economic policies over individual artistic expression, the book presents a dry, almost mechanical view of structural design. While I concur with Reviewer C regarding the fluid readability and accessible nature of her narrative, I share Marcus Vance's skepticism regarding the depth of her analysis on Asian urban growth, which lacks firsthand fieldwork."
+            text: "The series <i>Inside Business</i> took a serious look at day-to-day life in a modern large company and it wasn't for the casual viewer. The series required some effort to get to grips with the issues covered, in particular in the interviews, which were not really accessible to the lay person and were instead conducted as one expert to another. Having said that, the viewer who did put the effort in was rewarded with an absorbing insight into the workings of these well-known firms. They had each been carefully chosen to be representative of how large companies are structured and function at present, and they had much in common with each other. The main message put across was how adept those in charge have to be in adapting to a constantly changing business world."
         }
     ],
     questions: [
         {
             number: 37,
-            prompt: "shares Reviewer B's view regarding the influence of economic factors compared to artistic vision?",
-            answer: "D",
-            options: ["A", "B", "C", "D", "E"]
+            prompt: "has a different opinion from the others on the choice of companies to focus on in the series",
+            answer: "C",
+            options: ["Reviewer A", "Reviewer B", "Reviewer C", "Reviewer D"]
         },
         {
             number: 38,
-            prompt: "expresses a different opinion from Reviewer B regarding the quality of the chapters on Asian developments?",
-            answer: "C",
-            options: ["A", "B", "C", "D", "E"]
+            prompt: "shares Reviewer B's opinion of the likelihood of viewers losing interest in the series after a while?",
+            answer: "A",
+            options: ["Reviewer A", "Reviewer B", "Reviewer C", "Reviewer D"]
         },
         {
             number: 39,
-            prompt: "has a similar view to Reviewer A regarding the complexity of the author's prose style?",
-            answer: "D",
-            options: ["A", "B", "C", "D", "E"]
+            prompt: "takes a different view from the others on the impression given in the series of what it is like to be at the top of a large organisation?",
+            answer: "C",
+            options: ["Reviewer A", "Reviewer B", "Reviewer C", "Reviewer D"]
         },
         {
             number: 40,
-            prompt: "shares Reviewer C's perspective on the readability and engagement of the writing?",
-            answer: "E",
-            options: ["A", "B", "C", "D", "E"]
+            prompt: "has a similar view to Reviewer C on the questions asked in the interviews in the series?",
+            answer: "A",
+            options: ["Reviewer A", "Reviewer B", "Reviewer C", "Reviewer D"]
         }
     ]
 };
