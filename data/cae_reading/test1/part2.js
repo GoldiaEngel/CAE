@@ -1,15 +1,47 @@
 window.PART_DATA_2 = {
-    title: "The Subconscious and the Human Mind",
+    title: "On the hunt for the best young female entrepreneurs",
     instructions: "For questions 9–16, read the text below and think of the word which best fits each gap. Use only one word in each gap.",
-    passage: "The human mind is an onion with many layers. The outer layer is our conscious mind, which helps with our daily decision-making processes working [9] to the reality principle. It is intelligent, realistic, logical and proactive, [10] in new situations where we have to employ rational thought processes to [11] out what to do and how to do it. However, it can only deal with [12] five and nine things at any one time and is easily overloaded.<br><br>The subconscious or main hidden layer of the onion works [13] \"auto pilot\" i.e. reacting according to the pleasure principle in [14] it seeks to avoid pain and obtain pleasure and survival, [15] of external considerations. It is concerned with our emotions, imagination, and memories as well as our autonomic nervous system, which controls our internal organs automatically. [16] four main functions are very closely interlinked; in other words, the mind affects the body and the body affects the mind. It is powerful and very clever at dealing with many complex instructions simultaneously, but is not 'intelligent'.",
+    passage: "Founded in 1972, the Veuve Clicquot Business Woman Award is celebrated in 27 countries. Veuve Clicquot has now introduced a new award to complement its Business Woman of the Year category.<br><br>Called The New Generation Award, [9] recognises the best young female talent across business and corporate life.<br><br>The first winner of the award, Kathryn Parsons, [10] innovative start-up company, Decoded, teaches people to code in a day, has joined the judging panel to help find this year’s winner. The importance of these awards cannot [11] overestimated’ she says. ‘Women need role models that prove to [12] that they can do it, too.’<br><br>The New Generation Award is open to entrepreneurial businesswomen [13] the ages of 25 and 35. They can run [14] own businesses or hail from corporate life. This award isn’t about how much money you’ve made or how long you’ve been in business, it’s about recognising young women [15] a mission and a vision’ says Parsons. ‘We want to meet women who are working to [16] the world a better place.",
     gaps: [
-        { id: 9, answer: ["according"] },
-        { id: 10, answer: ["especially", "particularly"] },
-        { id: 11, answer: ["work", "find"] },
-        { id: 12, answer: ["between"] },
-        { id: 13, answer: ["on"] },
-        { id: 14, answer: ["that"] },
-        { id: 15, answer: ["regardless"] },
-        { id: 16, answer: ["the", "all", "these", "its"] }
+        { 
+            id: 9, 
+            answer: ["it"], 
+            explanation: "It here refers to the New Generation Award." 
+        },
+        { 
+            id: 10, 
+            answer: ["whose"], 
+            explanation: "The context suggests that the mentioned start-up belongs to Kathryn Parsons." 
+        },
+        { 
+            id: 11, 
+            answer: ["be"], 
+            explanation: "be" 
+        },
+        { 
+            id: 12, 
+            answer: ["them"], 
+            explanation: "To prove something to somebody is a set phrase that helps to understand this. \"Something\" part is skipped here, so we go straight to \"somebody\"." 
+        },
+        { 
+            id: 13, 
+            answer: ["between"], 
+            explanation: "Perfect to show the range of any numbers (age range in this example)." 
+        },
+        { 
+            id: 14, 
+            answer: ["their"], 
+            explanation: "Possessive pronoun relating to \"they\"." 
+        },
+        { 
+            id: 15, 
+            answer: ["with", "having"], 
+            explanation: "The question here is \"what kind of women they want to recognize?\". Women with or women having a mission and a vision." 
+        },
+        { 
+            id: 16, 
+            answer: ["make"], 
+            explanation: "To make the world a better place is a widely used set phrase." 
+        }
     ]
 };
