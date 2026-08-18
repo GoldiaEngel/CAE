@@ -1,23 +1,21 @@
 window.PART_DATA_3 = {
-    title: "The Power of Sleep",
+    title: "Exit Interview",
     instructions: "For questions 17–24, read the text below. Use the word given in capitals at the end of some of the lines to form a word that fits in the gap in the same line.",
     passage: `
-        <p>Sleep plays an [17] role in maintaining physical health and cognitive functioning. Scientists have long recognized that sleep is not merely a passive state of rest, but an active, highly dynamic process necessary for optimal brain [18].</p>
+        <p>If you are thinking of leaving your job, you may think that handing in your letter of resignation is the end of the matter. But an increasing number of companies now conduct ‘exit interviews’ with staff.</p>
         
-        <p>During deep sleep, the brain undergoes a remarkable process of cellular maintenance, clearing out toxic waste products accumulated throughout the day. Chronic sleep deprivation, by contrast, can lead to a significant decline in memory retention and emotional regulation, making individuals increasingly [19] to stress and mood disorders.</p>
+        <p>For the employee, an exit interview may feel like an ideal opportunity to rant and rave about every little [17] that has troubled them since they got the job. But, [18] in mind that you will probably still need a [19] from these people, it is best to avoid getting angry or [20], and just answer the questions as calmly and with as much [21] as possible.</p>
         
-        <p>[20], many adults habitually sacrifice sleep to meet demanding work schedules or social commitments, unaware of the long-term consequences. Public health experts stress that prioritizing sleep is just as crucial as maintaining a balanced diet and regular exercise routine. Educational campaigns aimed at raising awareness about sleep hygiene have gained [21] support in recent years.</p>
-        
-        <p>Simple lifestyle adjustments, such as limiting screen exposure before bedtime and maintaining a [22] sleep schedule, can produce dramatic improvements in sleep quality. As research continues to unveil the intricate mechanisms of human biology, the [23] value of a good night's rest becomes ever more evident, proving that adequate sleep is truly [24] for a long and healthy life.</p>
+        <p>For employers, the exit interview is a rare opportunity to gather some valuable information about the way staff perceive the company. Existing employees may not wish to cause [22] to the boss or damage their chances of promotion, so are unlikely to [23] their real feelings about the company. However, someone who has already resigned is more likely to be [24] when giving their opinions.</p>
     `,
     gaps: [
-        { id: 17, keyword: "REPLACE", answer: "irreplaceable" },
-        { id: 18, keyword: "EFFICIENT", answer: "efficiency" },
-        { id: 19, keyword: "VULNERABLE", answer: "vulnerable" },
-        { id: 20, keyword: "FORTUNE", answer: "unfortunately" },
-        { id: 21, keyword: "SUBSTANCE", answer: "substantial" },
-        { id: 22, keyword: "CONSIST", answer: "consistent" },
-        { id: 23, keyword: "DENY", answer: "undeniable" },
-        { id: 24, keyword: "DISPENSE", answer: "indispensable" }
+        { id: 17, keyword: "ANNOY", answer: "annoyance", explanation: "17 annoyance. This is the only noun that can be formed from annoy." },
+        { id: 18, keyword: "BEAR", answer: "bearing", explanation: "18 bearing. Remember that you can't use the same word form as the one given in the task" },
+        { id: 19, keyword: "REFER", answer: "reference", explanation: "19 reference. Indefinite article \"a\" suggests that we need to make it into a noun." },
+        { id: 20, keyword: "EMOTION", answer: "emotional", explanation: "20 emotional. Angry or ______ means that the second word has to be an adjective too." },
+        { id: 21, keyword: "HONEST", answer: "honesty", explanation: "21 honesty. As much *noun* as possible." },
+        { id: 22, keyword: "OFFEND", answer: "offence", explanation: "22 offence. Again, a noun should be used. Don't forget that offense is the AmE spelling and therefore shouldn't be used here." },
+        { id: 23, keyword: "CLOSE", answer: "disclose", explanation: "23 disclose. To disclose means \"to reveal, to make known\"." },
+        { id: 24, keyword: "TRUE", answer: "truthful", explanation: "24 truthful. An adjective is required here. Mind your spelling, only one letter l and the end of the word." }
     ]
 };
